@@ -1,0 +1,168 @@
+@media (min-width: 768px) {
+    :root {
+        /* COLORS */
+        --Primary-Black: #000000;
+        --Primary-Neutral: #404040;
+        --Primary-White: #FFFFFF;
+        --Zinc-100: #f4f4f5;
+        --Zinc-200: #e4e4e7;
+        --Zinc-300: #d4d4d8;
+        --Zinc-500: #71717a;
+        --Zinc-800: #27272a;
+        --Error-500: #ef4444;
+        /* TYPOGRAPHY */
+        --Display-size: 48px;
+        --Display-LH: 1.16;
+        --Display-Track: -0.96px;
+        --Display-Size-M: 24px;
+        --Display-LH-M: 1.14;
+        --Display-Track-M: -0.56px;
+        --Sub-Heading-Size: 40px;
+        --Sub-Heading-LH: 1.2;
+        --Sub-Heading-Track: -0.8px;
+        --Heading1-Size: 36px;
+        --Heading1-LH: 1.22;
+        --Heading1-Track: -0.72px;
+        --Heading2-Size: 32px;
+        --Heading2-LH: 1.25;
+        --Heading2-Track: -0.64px;
+        --Heading3-Size: 28px;
+        --Heading3-LH: 1.14;
+        --Heading3-Track: -0.56px;
+        --Heading4-Size: 24px;
+        --Heading4-LH: 1.16;
+        --Heading4-Track: -0.48px;
+        --Heading5-Size: 20px;
+        --Heading5-LH: 1.2;
+        --Heading5-Track: -0.4px;
+        --Heading6-Size: 16px;
+        --Heading6-LH: 1.25;
+        --Heading6-Track: -0.32px;
+        --P1-Size: 20px;
+        --P1-LH: 1.4;
+        --P1-Track: -0.4px;
+        --P2-Size: 16px;
+        --P2-LH: 1.5;
+        --P2-Track: -0.32px;
+        --P3-Size: 12px;
+        --P3-LH: 1.66;
+        --P3-Track: -0.24px;
+        --Button1-Text-Size: 20px;
+        --Button1-Text-LH: 1.2;
+        --Button1-Text-Track: -0.4px;
+        --Button2-Text-Size: 16px;
+        --Button2-Text-LH: 1.25;
+        --Button2-Text-Track: -0.32px;
+    }
+    
+    header, footer {
+        padding: 24px;
+    }
+
+    section {
+        padding: 40px 24px;
+    }
+
+    .hero {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .hero-image, .hero-text, .about-me-img, .about-me-text, .project-img, .project-detail, form, .contact-info {
+        width: 100%;
+    }
+
+    .skills-boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box-header {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+   .box-header, .about-me, .project, .testi-list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-me {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .project:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .testi-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .testi-box {
+        flex-basis: 45%;
+        flex-grow: 1;
+    }
+
+    .contact {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    header, footer, section {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    header, footer {
+        padding: 24px 80px;
+    }
+
+    section {
+        padding: 60px 80px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav, .resume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    nav a {
+        font-size: var(--Heading5-Size);
+        line-height: var(--Heading5-LH);
+        letter-spacing: var(--Heading5-Track);
+        font-weight: 500;
+        color: var(--Primary-Black);
+    }
+
+    nav a:hover {
+        font-weight: 600;
+    }
+
+    nav ~ a {
+        font-size: var(--Button1-Text-Size);
+        line-height: var(--Button2-Text-LH);
+        letter-spacing: var(--Button1-Text-Track);
+        font-weight: 600;
+        color: var(--Primary-White);
+        background-color: var(--Primary-Black);
+        gap: 8px;
+        padding: 16px 20px;
+        border-radius: 4px;
+    }
+
+    .menu-content {
+        display: none;
+    }
+}
